@@ -55,25 +55,20 @@ __uint8_t find_median(__uint8_t* location, __uint8_t arraysize)
 
 }
 
-
 __uint8_t find_mean(__uint8_t* location, __uint8_t arraysize) 
 {
 
 }
-
-
 
 __uint8_t find_maximum(__uint8_t* location, __uint8_t arraysize) 
 {
 
 }
 
-
 __uint8_t find_minimum(__uint8_t* location, __uint8_t arraysize) 
 {
 
 }
-
 
 void sort_array(__uint8_t* location, __uint8_t arraysize) 
 {
