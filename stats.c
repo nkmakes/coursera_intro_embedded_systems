@@ -43,6 +43,7 @@ void print_statistics(__uint8_t* location, __uint8_t arraysize)
 
 }
 
+
 void print_array(__uint8_t* location, __uint8_t arraysize) 
 {
   
