@@ -28,8 +28,8 @@
  * A function that prints the statistics of an array 
  * including minimum, maximum, mean, and median.
  *
- * @param unsigned char pointer to a n-element data array 
- * @param unsigned integer as the size of the array
+ * @param __uint8_t* pointer to a n-element data array 
+ * @param __uint8_t integer as the size of the array
  *
  * @return <Add Return Informaiton here>
  */
@@ -42,8 +42,8 @@ void print_statistics(__uint8_t* location, __uint8_t arraysize);
  * Given an array of data and a length, prints 
  * the array to the screen
  *
- * @param unsigned char pointer to a n-element data array 
- * @param unsigned integer as the size of the array
+ * @param __uint8_t* char pointer to a n-element data array 
+ * @param __uint8_t integer as the size of the array
  *
  * @return <Add Return Informaiton here>
  */
@@ -56,8 +56,8 @@ void print_array(__uint8_t* location, __uint8_t arraysize);
  * Given an array of data and a length, 
  * returns the median value
  *
- * @param unsigned char pointer to a n-element data array 
- * @param unsigned integer as the size of the array
+ * @param __uint8_t* char pointer to a n-element data array 
+ * @param __uint8_t integer as the size of the array
  *
  * @return An unsigned char result from the function
  */
@@ -70,8 +70,8 @@ __uint8_t find_median(__uint8_t* location, __uint8_t arraysize);
  * Given an array of data and a length, 
  * returns the mean
  *
- * @param unsigned char pointer to a n-element data array 
- * @param unsigned integer as the size of the array
+ * @param __uint8_t* char pointer to a n-element data array 
+ * @param __uint8_t integer as the size of the array
  *
  * @return An unsigned char result from the function
  */
@@ -84,8 +84,8 @@ __uint8_t find_mean(__uint8_t* location, __uint8_t arraysize);
  * Given an array of data and a length, 
  * returns the maximum
  *
- * @param unsigned char pointer to a n-element data array 
- * @param unsigned integer as the size of the array
+ * @param __uint8_t* char pointer to a n-element data array 
+ * @param __uint8t integer as the size of the array
  *
  * @return An unsigned char result from the function
  */
@@ -98,15 +98,15 @@ __uint8_t find_maximum(__uint8_t* location, __uint8_t arraysize);
  * Given an array of data and a length, 
  * returns the minimum
  *
- * @param unsigned char pointer to a n-element data array 
- * @param unsigned integer as the size of the array
+ * @param __uint8_t* char pointer to a n-element data array 
+ * @param __uint8_t integer as the size of the array
  *
  * @return An unsigned char result from the function
  */
 __uint8_t find_minimum(__uint8_t* location, __uint8_t arraysize);
 
 
-/*
+/**
  * @brief Sort an array, from big to small
  *
  * Given an array of data and a length, 
@@ -115,8 +115,8 @@ __uint8_t find_minimum(__uint8_t* location, __uint8_t arraysize);
  * and the last element (n-1) 
  * should be the smallest value.
  *
- * @param unsigned char pointer to a n-element data array 
- * @param unsigned integer as the size of the array
+ * @param __uint8_t* char pointer to a n-element data array 
+ * @param __uint8_t integer as the size of the array
  *
  * @return void
  */
