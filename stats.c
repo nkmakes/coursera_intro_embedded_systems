@@ -10,16 +10,16 @@
  *****************************************************************************/
 /**
  * @file stats.c
- * @brief <Add Brief Description Here >
+ * @brief M1 exercises function definitions
  *
- * <Add Extended Description Here>
+ * This file contains definitions of functions proposed by Alex Fosdick
+ * on the coursera course "Introduction to Embedded systems" for week 1
  *
  * @author N. Rodriguez
- * @date December 2021
+ * @date Decemeber 2021
+ *
  *
  */
-
-
 
 #include <stdio.h>
 #include "stats.h"

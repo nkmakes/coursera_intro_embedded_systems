@@ -10,9 +10,10 @@
  *****************************************************************************/
 /**
  * @file stats.h 
- * @brief <Add Brief Description Here >
+ * @brief M1 exercises function declarations
  *
- * <Add Extended Description Here>
+ * This file contains declarations of functions proposed by Alex Fosdick
+ * on the coursera course "Introduction to Embedded systems" for week 1
  *
  * @author N. Rodriguez
  * @date Decemeber 2021
@@ -31,7 +32,6 @@
  * @param __uint8_t* pointer to a n-element data array 
  * @param __uint8_t integer as the size of the array
  *
- * @return <Add Return Informaiton here>
  */
 void print_statistics(__uint8_t* location, __uint8_t arraysize);
 
@@ -44,8 +44,6 @@ void print_statistics(__uint8_t* location, __uint8_t arraysize);
  *
  * @param __uint8_t* char pointer to a n-element data array 
  * @param __uint8_t integer as the size of the array
- *
- * @return <Add Return Informaiton here>
  */
 void print_array(__uint8_t* location, __uint8_t arraysize);
 
@@ -117,8 +115,6 @@ __uint8_t find_minimum(__uint8_t* location, __uint8_t arraysize);
  *
  * @param __uint8_t* char pointer to a n-element data array 
  * @param __uint8_t integer as the size of the array
- *
- * @return void
  */
 void sort_array(__uint8_t* location, __uint8_t arraysize);
 
