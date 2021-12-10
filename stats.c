@@ -35,45 +35,81 @@ void main() {
                               201,   6,  12,  60,   8,   2,   5,  67,
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
-
+  print_array(test, SIZE);
+  print_statistics(test, SIZE);
+  sort_array(test, SIZE);
+  print_array(test, SIZE);
+  print_statistics(test, SIZE);
 }
 
 void print_statistics(__uint8_t* location, __uint8_t arraysize) 
 {
-
+  printf("Minimum value of array -> %d\n", find_minimum(location, arraysize));
+  printf("Maximum value of array -> %d\n", find_maximum(location, arraysize));
+  printf("Mean value of array    -> %d\n", find_mean(location, arraysize));
+  printf("Median value of array  -> %d\n", find_median(location, arraysize));
 }
 
 void print_array(__uint8_t* location, __uint8_t arraysize) 
 {
-  
+  for (__uint8_t i=0; i<arraysize; i++) {
+    printf("%d ", *(location+i));
+  }
+  printf("\n");
 }
 
 __uint8_t find_median(__uint8_t* location, __uint8_t arraysize) 
 {
-
+  sort_array(location, arraysize);
+  return *(location+(arraysize/2));
 }
 
 
 __uint8_t find_mean(__uint8_t* location, __uint8_t arraysize) 
 {
-
+  __uint16_t solution = 0;
+  for (__uint8_t i=0; i<arraysize; i++) {
+    solution += *(location+i);
+  }
+  return solution/2;
 }
 
 
 
 __uint8_t find_maximum(__uint8_t* location, __uint8_t arraysize) 
 {
-
+  __uint8_t solution = 0;
+  for (__uint8_t i=0; i<arraysize; i++) {
+    if (*(location+i) > solution ) {
+      solution = *(location+i);
+    }
+  }
+  return solution;
 }
 
 
 __uint8_t find_minimum(__uint8_t* location, __uint8_t arraysize) 
 {
-
+  __uint8_t solution = 255;
+  for (__uint8_t i=0; i<arraysize; i++) {
+    if (*(location+i) < solution ) {
+      solution = *(location+i);
+    }
+  }
+  return solution;
 }
 
 
 void sort_array(__uint8_t* location, __uint8_t arraysize) 
 {
-
+  __uint8_t temp=0;
+  for (__uint8_t i=0; i<arraysize; i++) {
+    for (__uint8_t j=i+1; j<arraysize; j++) {
+      if (*(location+i) < *(location+j)) {
+        temp = *(location+i);
+        *(location+i) = *(location+j);
+        *(location+j) = temp;
+      }
+    }
+  }
 }
